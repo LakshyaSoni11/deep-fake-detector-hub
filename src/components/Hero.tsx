@@ -38,7 +38,7 @@ const Hero = () => {
           </span>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6 animate-fade-in delay-100">
-            Detect <span className="text-gradient">DeepFakes</span> with Precision and Confidence
+            Detect <span className="bg-gradient-to-r from-[rgb(255,75,75)] to-[rgb(255,253,128)] bg-clip-text text-transparent">DeepFakes</span> with Precision and Confidence
           </h1>
           
           <p className="text-lg md:text-xl text-charcoal/80 max-w-2xl mx-auto mb-8 animate-fade-in delay-200">

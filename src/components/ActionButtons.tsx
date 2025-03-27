@@ -38,7 +38,7 @@ const ActionButtons = () => {
       <div className="container relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
-            Ready to Detect <span className="text-gradient">DeepFakes</span>?
+            Ready to Detect <span className="bg-gradient-to-r from-[rgb(255,75,75)] to-[rgb(255,253,128)] bg-clip-text text-transparent">DeepFakes</span>?
           </h2>
           
           <p className="text-lg text-charcoal/70 mb-10 max-w-2xl mx-auto">

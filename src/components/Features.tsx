@@ -36,7 +36,7 @@ const Features = () => {
       <div className="container relative z-20">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            How Our <span className="text-gradient">AI Model</span> Works
+            How Our <span className="bg-gradient-to-r from-[rgb(255,75,75)] to-[rgb(255,253,128)] bg-clip-text text-transparent">AI Model</span> Works
           </h2>
           <p className="text-lg text-charcoal/70">
             Our sophisticated deep learning system analyzes content using these advanced techniques

@@ -33,13 +33,13 @@ const Navbar = () => {
         <Link 
           to="/" 
           className="flex items-center gap-2 transition-opacity hover:opacity-80"
-          aria-label="DeepFake Detector Hub"
+          aria-label="Detect AI Hub"
         >
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-deepblue to-mint flex items-center justify-center text-white font-bold overflow-hidden">
-            <span className="text-white font-display text-lg">DF</span>
+            <span className="text-white font-display text-lg">DA</span>
           </div>
           <span className="font-display text-xl font-semibold tracking-tight">
-            DeepFake<span className="text-deepblue">Detector</span>
+            Detect<span className="bg-gradient-to-r from-[rgb(255,75,75)] to-[rgb(255,253,128)] bg-clip-text text-transparent">AI</span>
           </span>
         </Link>
 
