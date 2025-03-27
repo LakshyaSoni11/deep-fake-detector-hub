@@ -1,0 +1,81 @@
+
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { cn } from "@/lib/utils";
+
+const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
+
+  return (
+    <header 
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        scrolled 
+          ? "bg-white/80 backdrop-blur-md shadow-sm" 
+          : "bg-transparent"
+      )}
+    >
+      <nav className="container flex items-center justify-between h-16 md:h-20">
+        <Link 
+          to="/" 
+          className="flex items-center gap-2 transition-opacity hover:opacity-80"
+          aria-label="DeepFake Detector Hub"
+        >
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-deepblue to-mint flex items-center justify-center text-white font-bold overflow-hidden">
+            <span className="text-white font-display text-lg">DF</span>
+          </div>
+          <span className="font-display text-xl font-semibold tracking-tight">
+            DeepFake<span className="text-deepblue">Detector</span>
+          </span>
+        </Link>
+
+        <div className="flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-6">
+            <NavLink href="/detect-text">Detect Text</NavLink>
+            <NavLink href="/detect-video">Detect Video</NavLink>
+          </div>
+
+          <Link 
+            to="/detect-text" 
+            className="text-sm bg-softblue text-deepblue font-medium px-4 py-2 rounded-full hover:bg-deepblue hover:text-white transition-all duration-300"
+          >
+            Try Now
+          </Link>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+const NavLink = ({ 
+  href, 
+  children 
+}: { 
+  href: string; 
+  children: React.ReactNode 
+}) => {
+  return (
+    <Link 
+      to={href} 
+      className="font-medium text-base text-charcoal/90 hover:text-deepblue transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-deepblue after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:rounded-full"
+    >
+      {children}
+    </Link>
+  );
+};
+
+export default Navbar;
