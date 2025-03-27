@@ -63,11 +63,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom theme colors
-				deepblue: '#2D5BFF',
-				softblue: '#E4ECFF',
-				coral: '#FF6B6B',
-				mint: '#52ACFF',
+				// Custom theme colors - updated with darker gradient colors
+				deepblue: 'rgb(230,65,65)', // Changed from blue to dark red
+				softblue: 'rgba(235,233,108,0.1)', // Changed to light yellow
+				coral: 'rgb(230,65,65)', // Dark red
+				mint: 'rgb(235,233,108)', // Dark yellow
 				charcoal: '#2E3440',
 			},
 			borderRadius: {

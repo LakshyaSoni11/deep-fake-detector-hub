@@ -35,11 +35,11 @@ const Navbar = () => {
           className="flex items-center gap-2 transition-opacity hover:opacity-80"
           aria-label="Detect AI Hub"
         >
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-deepblue to-mint flex items-center justify-center text-white font-bold overflow-hidden">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[rgb(230,65,65)] to-[rgb(235,233,108)] flex items-center justify-center text-white font-bold overflow-hidden">
             <span className="text-white font-display text-lg">DA</span>
           </div>
           <span className="font-display text-xl font-semibold tracking-tight">
-            Detect<span className="bg-gradient-to-r from-[rgb(255,75,75)] to-[rgb(255,253,128)] bg-clip-text text-transparent">AI</span>
+            Detect<span className="bg-gradient-to-r from-[rgb(230,65,65)] to-[rgb(235,233,108)] bg-clip-text text-transparent">AI</span>
           </span>
         </Link>
 
@@ -51,7 +51,7 @@ const Navbar = () => {
 
           <Link 
             to="/detect-text" 
-            className="text-sm bg-softblue text-deepblue font-medium px-4 py-2 rounded-full hover:bg-deepblue hover:text-white transition-all duration-300"
+            className="text-sm bg-gradient-to-r from-[rgb(230,65,65)]/10 to-[rgb(235,233,108)]/10 text-[rgb(230,65,65)] font-medium px-4 py-2 rounded-full hover:from-[rgb(230,65,65)] hover:to-[rgb(235,233,108)] hover:text-white transition-all duration-300"
           >
             Try Now
           </Link>
@@ -71,7 +71,7 @@ const NavLink = ({
   return (
     <Link 
       to={href} 
-      className="font-medium text-base text-charcoal/90 hover:text-deepblue transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-deepblue after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:rounded-full"
+      className="font-medium text-base text-charcoal/90 hover:text-[rgb(230,65,65)] transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-gradient-to-r after:from-[rgb(230,65,65)] after:to-[rgb(235,233,108)] after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:rounded-full"
     >
       {children}
     </Link>

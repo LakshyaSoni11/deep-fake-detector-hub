@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 221 83% 53%;
+    --primary: 355 100% 65%; /* Changed to red */
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -33,7 +33,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221 83% 53%;
+    --ring: 355 100% 65%; /* Changed to red */
 
     --radius: 0.75rem;
 
@@ -71,15 +71,15 @@
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[rgb(255,75,75)] to-[rgb(255,253,128)];
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[rgb(230,65,65)] to-[rgb(235,233,108)]; /* Darkened gradient */
   }
 
   .btn-gradient {
-    @apply bg-gradient-to-r from-deepblue to-mint text-white transition-all duration-300;
+    @apply bg-gradient-to-r from-[rgb(230,65,65)] to-[rgb(235,233,108)] text-white transition-all duration-300; /* Darkened gradient */
   }
 
   .btn-gradient:hover {
-    @apply shadow-lg shadow-deepblue/20 translate-y-[-1px];
+    @apply shadow-lg shadow-[rgb(230,65,65)]/20 translate-y-[-1px];
   }
 
   .background-grid {

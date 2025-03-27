@@ -36,7 +36,7 @@ const Features = () => {
       <div className="container relative z-20">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            How Our <span className="bg-gradient-to-r from-[rgb(255,75,75)] to-[rgb(255,253,128)] bg-clip-text text-transparent">AI Model</span> Works
+            How Our <span className="bg-gradient-to-r from-[rgb(230,65,65)] to-[rgb(235,233,108)] bg-clip-text text-transparent">AI Model</span> Works
           </h2>
           <p className="text-lg text-charcoal/70">
             Our sophisticated deep learning system analyzes content using these advanced techniques
@@ -91,9 +91,9 @@ const FeatureItem = ({ number, title, description, delay }: FeatureItemProps) =>
       style={{ animationDelay: `${delay}ms` }}
     >
       <div className="flex items-start">
-        <span className="text-4xl font-display font-bold text-deepblue/10 mr-4">{number}</span>
+        <span className="text-4xl font-display font-bold text-[rgb(230,65,65)]/10 mr-4">{number}</span>
         <div>
-          <h3 className="text-xl font-display font-semibold mb-3">{title}</h3>
+          <h3 className="text-xl font-display font-semibold mb-3 bg-gradient-to-r from-[rgb(230,65,65)] to-[rgb(235,233,108)] bg-clip-text text-transparent">{title}</h3>
           <p className="text-charcoal/70">{description}</p>
         </div>
       </div>
