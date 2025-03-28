@@ -49,7 +49,7 @@ const ActionButtons = () => {
             <ActionButton 
               title="Detect Text" 
               description="Identify AI-generated or manipulated text content"
-              url="https://your-streamlit-text-detection.com"
+              url="https://devils-pentagram-fake-news-detector.streamlit.app/"
               type="text"
             />
             

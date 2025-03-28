@@ -47,7 +47,7 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-300">
             <a 
-              href="https://your-streamlit-text-detection.com" 
+              href="https://devils-pentagram-fake-news-detector.streamlit.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-gradient px-6 py-3 rounded-full font-medium text-base flex-1 sm:flex-initial text-center"
